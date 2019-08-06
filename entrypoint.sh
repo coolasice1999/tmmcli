@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ ! -f /mnt/cron.conf ]; then
-    echo "0 5 * * * /config/tinyMediaManagerCMD.sh -updateMovies -updateTv -scrapeNew" > /mnt/cron.conf
+    echo "30 0 * * * /config/tinyMediaManagerCMD.sh -updateMovies -updateTv -scrapeNew" > /mnt/cron.conf
 fi
 
 chmod 600 /mnt/cron.conf
