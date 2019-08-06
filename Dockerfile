@@ -36,7 +36,6 @@ RUN \
 
 # Add files.
 COPY rootfs/ /
-COPY VERSION /
 
 # Define mountable directories.
 VOLUME ["/config"]
