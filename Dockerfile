@@ -10,6 +10,9 @@ ARG JAVAJRE_URL=https://d3pxv6yz143wms.cloudfront.net/${JAVAJRE_VERSION}/amazon-
 # Define working directory.
 WORKDIR /tmp
 
+COPY helpers/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/add-pkg && chmod +x /usr/local/bin/del-pkg
+
 # Download TinyMediaManager
 RUN \
     mkdir -p /defaults && \
