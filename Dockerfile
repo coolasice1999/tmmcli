@@ -33,7 +33,7 @@ RUN \
         # the Alpine Linux's openjdk native package.
         # The libstdc++ package is also needed as part of the 7-Zip-JBinding
         # workaround.
-        #openjdk8-jre \
+        openjdk8-jre \
         libmediainfo \
         bash
 
