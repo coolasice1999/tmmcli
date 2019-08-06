@@ -34,7 +34,8 @@ RUN \
         # The libstdc++ package is also needed as part of the 7-Zip-JBinding
         # workaround.
         #openjdk8-jre \
-        libmediainfo
+        libmediainfo \
+        bash
 
 # Add files.
 COPY rootfs/ /
