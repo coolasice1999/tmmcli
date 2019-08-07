@@ -13,7 +13,8 @@ RUN apk add --no-cache tzdata
 ENV TZ America/New_York
 
 #add helper packages
-COPY helpers/* /usr/local/bin/ && COPY ./entrypoint.sh /mnt/entrypoint.sh
+COPY helpers/* /usr/local/bin/
+COPY ./entrypoint.sh /mnt/entrypoint.sh
 RUN chmod +x /usr/local/bin/add-pkg && chmod +x /usr/local/bin/del-pkg && chmod +x /mnt/entrypoint.sh
 # Download TinyMediaManager
 RUN \
