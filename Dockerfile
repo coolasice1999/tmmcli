@@ -9,7 +9,10 @@ ARG JAVAJRE_URL=https://d3pxv6yz143wms.cloudfront.net/${JAVAJRE_VERSION}/amazon-
 
 # Define working directory.
 WORKDIR /tmp
-
+#set timezone 
+RUN apk add --no-cache tzdata
+ENV TZ America/New_York
+#add helper packages
 COPY helpers/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/add-pkg && chmod +x /usr/local/bin/del-pkg
 
