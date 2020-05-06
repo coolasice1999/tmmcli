@@ -37,7 +37,6 @@ VOLUME ["/config"]
 VOLUME ["/media"]
 
 
-ENV Cron_Timing
 ENTRYPOINT ["/mnt/entrypoint.sh"]
 CMD ["/usr/sbin/crond", "-f", "-d", "0"] 
 
