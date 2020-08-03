@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.11
 # Define software versions.
 ARG TMM_VERSION=3.1.7
 
