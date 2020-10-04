@@ -1,9 +1,9 @@
-FROM alpine:3.11
+FROM alpine:3.12
 # Define software versions.
-ARG TMM_VERSION=4.0.3
+ARG TMM_VERSION=3.1.10
 
 # Define software download URLs.
-ARG TMM_URL=https://release.tinymediamanager.org/v4/dist/tmm_${TMM_VERSION}_linux.tar.gz
+ARG TMM_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
 
 # Define working directory.
 WORKDIR /tmp
