@@ -52,6 +52,6 @@ jobs:
           push: true
           build-args: |
             VUE_APP_VERSION=v0.0.7-alpha-${{ steps.current-time.outputs.formattedTime }}
-          tags: coolasice1999/tmm:latest
+          tags: coolasice1999/tmm-cli-cronjob:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
