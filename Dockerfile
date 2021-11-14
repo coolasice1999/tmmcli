@@ -1,6 +1,6 @@
 FROM alpine:3.12
 # Define software versions.
-ARG TMM_VERSION=3.1.11
+ARG TMM_VERSION=3.1.16.1
 
 # Define software download URLs.
 ARG TMM_URL=https://release.tinymediamanager.org/v3/dist/tmm_${TMM_VERSION}_linux.tar.gz
