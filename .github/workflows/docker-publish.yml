@@ -1,7 +1,7 @@
 name: Build Master
 
 on:
-  push:
+  workflow_dispatch:
     branches: 
         - master
 
